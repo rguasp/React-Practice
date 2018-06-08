@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import AddItem from './components/AddItem';
 import registerServiceWorker from './registerServiceWorker';
+import IndexItem from './components/IndexItem';
+import EditItem from './components/EditItem';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
@@ -12,6 +14,8 @@ ReactDOM.render(
       <div>
         <Route exact path='/' component={App} />
         <Route path='/add-item' component={AddItem} />
+        <Route path='/index' component={IndexItem} />
+        <Route path='/edit/:id' component={EditItem} />
       </div>
   </Router>,
   document.getElementById('root')
