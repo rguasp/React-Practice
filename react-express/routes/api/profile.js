@@ -189,8 +189,7 @@ router.post(
         from: req.body.from,
         to: req.body.to,
         current: req.body.current,
-        description: req.body.description,
-        clientInformation: req.body.clientInformation
+        description: req.body.description
       };
 
       // Add to exp array
